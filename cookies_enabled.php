@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>cookie tester</title>
+</head>
+	<?php
+		setcookie("test_cookie", "test", time() + 3600, '/');
+	
+	?>
+<body>
+	<?php
+		
+		if (count($_COOKIE) > 0) {
+			echo "Cookies are enabled.";
+		} else {
+			echo "Cookies are disabled.";
+		}
+	?>
+</body>
+</html>
